@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif; /* Using Google Fonts for a modern look */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hwb(217 1% 87%); /* Light blue background */
+    color: #c94a4a; /* Dark text color */
+}
+
+header {
+    background-color: #009f8a; /* Dark blue header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Bright color transition */
+}
+
+header nav ul li a:hover {
+    color: #ffdff7; /* Lighter blue on hover */
+}
+
+section {
+    padding: 80px 20px 20px; /* Increased padding for sections */
+    text-align: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translate(20px);
+    opacity: 0;
+}
+
+section.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+h1, h2, h3 {
+font-family: 'Georgia', serif;
+
+#about {
+    text-align: center;
+}
+
+#my-photo {
+    max-width: 300px; /* Set maximum width for the image */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin: 20px auto; /* Centering the image */
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+form input, form textarea {
+    width: 100%;
+}
+
+form button {
+    background-color: #007acc; /* Dark blue button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #005b9f; /* Darker blue on hover */
+}
+#skills ul, #hobbies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li, #hobbies li {
+    margin: 10px 0;
+}
+
+#projects .project, #certifications .certification {
+    margin: 20px 0;
+}
+
+#projects img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #005b9f; /* Dark blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 1px 0; /* Smaller padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px; /* Smaller font size */
+}
+
+
+@media (min-width: 768px) {
+    #skills, #activities, #hobbies {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #skills ul, #activities ul, #hobbies ul {
+        text-align: left;
+    }
+}
+
+
+#social-media {
+    text-align: center;
+    padding: 40px 20px; /* Increased padding for social media section */
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.social-links a {
+    margin: 0 20px; /* Increased margin between social media icons */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.social-links img:hover {
+    filter: brightness(1.2); /* Increase brightness on hover */
+}
