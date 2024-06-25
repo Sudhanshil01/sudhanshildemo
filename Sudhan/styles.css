@@ -1,0 +1,231 @@
+body {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('images/BackG.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #2ad19f;
+    font-size: 18px;
+}
+
+header {
+    background: rgba(53, 61, 184, 0.9);
+    color: hsla(160, 23%, 97%, 0.952);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-weight: bolder;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f6fafa;
+    text-decoration: none;
+    font-weight: 700 bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f8faf9;
+}
+
+main {
+    padding: 60px 20px;
+}
+
+section {
+    padding: 60px 20px;
+    background: rgba(42, 218, 224, 0.9);
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(19, 185, 177, 0.3);
+    text-align: center;
+    font-weight: bold;
+    background: url('images/section-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fc4e0afd;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 400px;
+    text-align: left;
+}
+
+#about #my-photo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.blinking-text {
+    animation: blinking 0.5s infinite;
+    font-weight: 700;
+}
+
+@keyframes blinking {
+    0%, 100% { color: #ff3f81; }
+    25% { color: #bf0049; }
+    50% { color: #333; }
+    75% { color: #12be20; }
+}
+
+#social-media .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#social-media .social-links img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: filter 0.3s ease;
+}
+
+#social-media .social-links img:hover {
+    filter: brightness(1.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+form input, form textarea, form button {
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+}
+
+form button {
+    background-color: #007acc;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+form button:hover {
+    background-color: #005b9f;
+}
+
+#skills .skill {
+    margin: 20px 0;
+}
+
+#skills .skill span {
+    font-weight: 500;
+}
+
+#skills .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#skills .progress {
+    background-color: #007acc;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: right;
+    border-radius: 5px;
+}
+
+#projects .project img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* To remove bullet points */
+#certifications ul,
+#hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #005b9f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 40px 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    #about #my-photo {
+        margin: 20px auto;
+    }
+}
